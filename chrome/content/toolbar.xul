@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<overlay id="supriyotoolbar-Overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript"
+        src="chrome://toolbar/content/toolbar.js" />
+         
+    <toolbox id="navigator-toolbox">
+    
+        <toolbar id="toolbar-Toolbar" toolbarname="supriyo Toolbar" accesskey="T"
+                 class="chromeclass-toolbar" context="toolbar-context-menu" 
+                 hidden="false" persist="hidden">
+
+<toolbarbutton id="Toolbar-LOGO-Button"
+               tooltiptext="LOGO"
+               label="LOGO"
+               flex="1"
+               />
+        <toolbarseparator />
+
+<toolbarbutton id="Toolbar-STANDARD-Button"
+               tooltiptext="STANDARD MODE"
+               label="STANDARD MODE"
+	       oncommand="myscope2.standardmode(event)"
+               flex="1"
+                 />
+        <toolbarseparator />
+
+<toolbarbutton id="Toolbar-SAFE-Button"
+               tooltiptext="SAFE MODE"
+               label="SAFE MODE"
+               oncommand= "myscope1.safemode(event)" 
+               flex="1"
+	       type="menu-button">
+	<menupopup>
+		<menuitem label="Profile #1"/>
+		<menuitem label="Profile #2"/>
+		<menuitem label="Profile #3"/>
+		<menuitem label="Profile #4"/>
+		<menuitem label="Profile #5"/>
+		<menuitem label="Profile #6"/>
+	</menupopup>
+</toolbarbutton>
+
+	<toolbarseparator />
+        
+<label  id="Toolbar-SYSTEM-MESSAGE"
+       value="SYSTEM MESSAGE"
+       style="text-align: center"
+        flex="2"
+/>
+        
+	<toolbarseparator />
+
+<toolbarbutton id="Toolbar-PERSONAL-Button"
+               tooltiptext="PERSONAL Search"
+               label="PERSONAL AREA"
+                oncommand="myscope1.pa(event)" 
+                flex="1"
+               />
+        </toolbar>
+        
+    </toolbox>
+    
+</overlay>
