@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+    <Description about="urn:mozilla:install-manifest">
+
+        <!-- Required Items -->
+        <em:id>toolbar@projectsupriyo.net</em:id>
+	<em:unpack>true</em:unpack>
+        <em:name> Toolbar</em:name>
+        <em:type>2</em:type>
+        <em:version>1.0</em:version>
+
+        <em:targetApplication>
+            <Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>1.5</em:minVersion>
+                <em:maxVersion>4.0.*</em:maxVersion>
+		<em:unpack>true</em:unpack>
+            </Description>
+        </em:targetApplication>
+
+        <!-- Optional Items -->
+        <em:creator>Ashok and Supriyo</em:creator>
+        <em:description>A toolbar extension.</em:description>
+        <em:homepageURL>http://www.thesite.com/firefox/</em:homepageURL>
+
+    </Description>
+</RDF>
